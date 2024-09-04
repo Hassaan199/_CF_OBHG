@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Customer Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .likert-scale {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        .likert-scale label {
+            width: 20%;
+            text-align: center;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Restaurant Customer Feedback Form</h2>
+    <p>Thank you for dining with us at OB Hospitality Group. We value your feedback and would appreciate it if you could take a few moments to complete this survey. Your responses will help us improve our services.</p>
+
+    <form>
+        <!-- Food Quality Section -->
+        <div class="question">
+            <label class="question-label">1. How would you rate the quality of the food?</label>
+            <div class="likert-scale">
+                <label><input type="radio" name="food_quality" value="1"> Very Unsatisfied</label>
+                <label><input type="radio" name="food_quality" value="2"> Unsatisfied</label>
+                <label><input type="radio" name="food_quality" value="3"> Neutral</label>
+                <label><input type="radio" name="food_quality" value="4"> Satisfied</label>
+                <label><input type="radio" name="food_quality" value="5"> Very Satisfied</label>
+            </div>
+        </div>
+
+        <!-- Service Quality Section -->
+        <div class="question">
+            <label class="question-label">2. How would you rate the quality of the service?</label>
+            <div class="likert-scale">
+                <label><input type="radio" name="service_quality" value="1"> Very Unsatisfied</label>
+                <label><input type="radio" name="service_quality" value="2"> Unsatisfied</label>
+                <label><input type="radio" name="service_quality" value="3"> Neutral</label>
+                <label><input type="radio" name="service_quality" value="4"> Satisfied</label>
+                <label><input type="radio" name="service_quality" value="5"> Very Satisfied</label>
+            </div>
+        </div>
+
+        <!-- Ambiance Section -->
+        <div class="question">
+            <label class="question-label">3. How would you rate the ambiance of the restaurant?</label>
+            <div class="likert-scale">
+                <label><input type="radio" name="ambiance" value="1"> Very Unsatisfied</label>
+                <label><input type="radio" name="ambiance" value="2"> Unsatisfied</label>
+                <label><input type="radio" name="ambiance" value="3"> Neutral</label>
+                <label><input type="radio" name="ambiance" value="4"> Satisfied</label>
+                <label><input type="radio" name="ambiance" value="5"> Very Satisfied</label>
+            </div>
+        </div>
+
+        <!-- Value for Money Section -->
+        <div class="question">
+            <label class="question-label">4. How would you rate the value for money?</label>
+            <div class="likert-scale">
+                <label><input type="radio" name="value_for_money" value="1"> Very Unsatisfied</label>
+                <label><input type="radio" name="value_for_money" value="2"> Unsatisfied</label>
+                <label><input type="radio" name="value_for_money" value="3"> Neutral</label>
+                <label><input type="radio" name="value_for_money" value="4"> Satisfied</label>
+                <label><input type="radio" name="value_for_money" value="5"> Very Satisfied</label>
+            </div>
+        </div>
+
+        <!-- Overall Experience Section -->
+        <div class="question">
+            <label class="question-label">5. How would you rate your overall experience?</label>
+            <div class="likert-scale">
+                <label><input type="radio" name="overall_experience" value="1"> Very Unsatisfied</label>
+                <label><input type="radio" name="overall_experience" value="2"> Unsatisfied</label>
+                <label><input type="radio" name="overall_experience" value="3"> Neutral</label>
+                <label><input type="radio" name="overall_experience" value="4"> Satisfied</label>
+                <label><input type="radio" name="overall_experience" value="5"> Very Satisfied</label>
+            </div>
+        </div>
+
+        <!-- Additional Comments Section -->
+        <div class="question">
+            <label class="question-label">6. Additional Comments:</label>
+            <textarea name="additional_comments" rows="4" cols="50" placeholder="Please provide any additional feedback or suggestions here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </div>
+    </form>
+
+</body>
+</html>
